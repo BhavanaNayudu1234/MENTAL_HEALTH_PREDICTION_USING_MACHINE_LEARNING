@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mental health predicton</title>
+</head>
+<style>
+    body{
+        background: url('https://img.freepik.com/free-vector/flat-world-mental-health-day-background_23-2149631906.jpg?size=626&ext=jpg&ga=GA1.1.2113030492.1720310400&semt=ais_user');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1540px 1400px;
+    }
+</style>
+<body>
+    <div id="bg">
+    <center>
+        <center>
+            <form action="{{url_for('home')}}">
+                <button type="submit" style="height:30px; width:70px">Home</button>
+            </form>
+          
+      </center>
+  
+</br>
+         <form action="{{url_for('pred')}}">
+              <button type="submit" style="height:30px; width:70px">Predict</button>
+         </form>
+       
+
+
+    </center>
+
+    <center>{{y}}</center>
+
+    </div>
+</body>
+</html>

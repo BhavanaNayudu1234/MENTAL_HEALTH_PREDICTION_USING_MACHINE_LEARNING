@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mental health prediction</title>
+</head>
+<style>
+ 
+    body  {
+  background-image: url("https://media.licdn.com/dms/image/D4D12AQHua22Rc22oWA/article-cover_image-shrink_720_1280/0/1654029354457?e=2147483647&v=beta&t=FqrsIlRQIHugIG5sFpifDalkITh5CTR8DolGuKwFY-E");
+  background-repeat: no-repeat;
+  background-size: 1540px 1070px;
+}
+
+</style>
+<body>
+  
+  <div id="bg">
+  <form action="{{url_for('output')}}" method="post">
+    <label for=""><b>age</b></label><input type="number" placeholder="Enter age" max="100" name="a"><br><br>
+    <label for=""><b>Gender</b></label><input type="number" placeholder="Male(0)/Female(1)" max="100" name="b"><br><br>
+    <label for=""><b>Country</b></label><input type="number" placeholder="Enter Country" max="100" name="c"><br><br>
+    <label for=""><b>State</b></label><input type="number" placeholder="State" max="1" min="0" name="d"><br><br>
+    <label for=""><b>Self_employed</b></label><input type="number" placeholder="yes(1)/no(0)" id="" min="0" max="1" name="e"><br><br>
+    <label for=""><b>Family_history</b></label><input type="number" placeholder="yes(0)/no(1)" name="f"><br><br>
+    <label for=""><b>work_interface</b></label><input type="number" placeholder="Enter values between 0-3" name="g"><br><br>
+    <label for=""><b>no_employees</b></label><input type="number" placeholder="Enter values btw 0-5" name="h"><br><br>
+    <label for=""><b>remote_work</b></label><input type="number" placeholder="yes(0)/no(1)" name="i"><br><br>
+    <label for=""><b>Tech_company</b></label><input type="number" placeholder="yes(1)/no(0)" name="j"><br><br>
+    <label for=""><b>benefits</b></label><input type="number" placeholder="Enter values (0-2)" name="k"><br><br>
+    <label for=""><b>care_options</b></label><input type="number" placeholder="Enter values (0-2)" name="l"><br><br>
+    <label for=""><b>wellness_program</b></label><input type="number" placeholder="Enter values (0-2)" name="m"><br><br>
+    <label for=""><b>seek_help</b></label><input type="number" name="n" placeholder="Enter values (0-2)"><br><br>
+    <label for=""><b>anonymity</b></label><input type="number" name="o" placeholder="Enter values (0-2)"><br><br>
+    <label for=""><b>leave</b></label><input type="number" name="p" placeholder="Enter values (0-4)"><br><br>
+    <label for=""><b>mental_health_consequence</b></label><input type="number" name="q" placeholder="Enter values (0-2)"><br><br>
+    <label for=""><b>phys_health_consequence</b></label><input type="number" name="r" placeholder="Enter values (0-2)"><br><br>
+    <label for=""><b>coworkers</b></label><input type="number" name="s" placeholder="Enter values (0-2)"><br><br>
+    <label for=""><b>supervisor</b></label><input type="number" name="t" placeholder="Enter values (0-2)"><br><br>
+    <label for=""><b>mental_health_interview</b></label><input type="number" name="u" placeholder="Enter value (0-2)"><br><br>
+    <label for=""><b>phys_health_interview</b></label><input type="number" name="v" placeholder="Enter value (0-2)"><br><br>
+    <label for=""><b>mental_vs_physical</b></label><input type="number" name="w" placeholder="Enter value (0-2)"><br><br>
+    <label for=""><b>obs_consequence</b></label><input type="number" name="x" placeholder="Enter value (0-1)"><br><br>
+    <label for=""><b>comments</b></label><input type="number" placeholder="Comments any" max="100" name="y"><br><br>
+
+
+
+
+    <button type="submit" style="height:50px; width:100px">Predict</button>
+  </form>
+  </div>
+</body>
+</html>
